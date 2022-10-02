@@ -63,6 +63,7 @@ module.exports = function (RED) {
         }
 
         sendChanged(circle, numCheck) {
+            console.log(JSON.stringify(circle));
             let node = this;
             let circleName = circle.name;
             let members = circle.members;
